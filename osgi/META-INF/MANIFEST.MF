@@ -15,5 +15,4 @@ Import-Package: javax.swing,
  org.xml.sax.helpers
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ClassPath: lib/helpgui-1.1-demo.jar,
- lib/helpgui-1.1.jar,
  .

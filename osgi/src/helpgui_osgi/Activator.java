@@ -1,5 +1,7 @@
 package helpgui_osgi;
 
+import java.net.URL;
+
 import javax.swing.SwingUtilities;
 
 import net.sourceforge.helpgui.gui.MainFrame;
@@ -27,7 +29,11 @@ public class Activator implements BundleActivator {
 			public void run() {
 				MainFrame mainFrame = new MainFrame("/docs/help/", "plastic");
 				mainFrame.setVisible(true);
+//				mainFrame.
 			}});
+		
+		URL u = bundleContext.getBundle().getEntry("helpgui_osgi/favicon_1.jpg");
+		System.err.println("u: "+u);
 	}
 
 	/*
